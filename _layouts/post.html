@@ -9,7 +9,7 @@ layout: default
       {{ page.date | date: "%b %e, %Y" }}
     </info>
     {% endunless %}
-    <div class="body">{% if page.external_url %}Article is published at {{ page.external_url }}<script>
+    <div class="body">{% if page.external_url %}Статья опубликована в {{ page.external_url }}<script>
     document.location.href = "{{ page.external_url }}";
     </script>{% else %}{{ content }}{% endif %}</div>
     <div class="breaker"></div>

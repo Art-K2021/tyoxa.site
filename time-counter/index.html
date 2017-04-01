@@ -138,7 +138,7 @@ if (ref_date === null) {
   if (qs.refdate) {
     alert('Invalid date ' + qs.refdate)
   }
-  ref_date = parseDate('Wed Jan 29 2014 18:17:00 GMT-0800 (PST)');
+  ref_date = parseDate('Sat Nov 19 2016 12:00:00 GMT+0400 (SMRT)');
 }
 
 if (!window.requestAnimationFrame) {
@@ -453,13 +453,13 @@ function update_time_deltas() {
 update_time_deltas();
 
 //         radius, label,     maxval, update_interval, get_value
-create_arc(65,     'seconds', 60,     100,  function() { return time_deltas.seconds; });
-create_arc(110,    'minutes', 60,     100,  function() { return time_deltas.minutes; });
-create_arc(155,    'hours',   24,     100,  function() { return time_deltas.hours; });
-create_arc(200,    'days',    7,      100,  function() { return time_deltas.days; });
-create_arc(245,    'weeks',   5,      1000, function() { return time_deltas.weeks; });
-create_arc(290,    'months',  12,     1000, function() { return time_deltas.months; });
-create_arc(335,    'years',   85,     1000, function() { return time_deltas.years; });
+create_arc(65,     'секунд',  60,     100,  function() { return time_deltas.seconds; });
+create_arc(110,    'минут',   60,     100,  function() { return time_deltas.minutes; });
+create_arc(155,    'часов',   24,     100,  function() { return time_deltas.hours; });
+create_arc(200,    'дней',     7,      100,  function() { return time_deltas.days; });
+create_arc(245,    'недель',   5,      1000, function() { return time_deltas.weeks; });
+create_arc(290,    'месяцев', 12,     1000, function() { return time_deltas.months; });
+create_arc(335,    'лет',     85,     1000, function() { return time_deltas.years; });
 
 // setInterval(function (){
 //   document.title = [years(), months(), weeks(), days(), hours(), minutes(), seconds() ].join(':');

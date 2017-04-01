@@ -1,10 +1,14 @@
-port: 3000
+# Welcome to Jekyll!
+
+port: 3210
 lsi: false
 permalink: /:title
 markdown: kramdown
+
 # Since GH pages override this to "true", we test this value to see if we are running locally
 safe: false
-include: [".well-known"]
+
+## include: [".well-known"]
 # highlighter: none
 # syntax_highlighter: none
 kramdown:
@@ -14,5 +18,34 @@ kramdown:
   # transliterated_header_ids: true
   syntax_highlighter_opts:
       disable: true
-gems:
+
+##description: > # this means to ignore newlines until "baseurl:"
+##  Write an awesome description for your new site here. You can edit this
+##  line in _config.yml. It will appear in your document head meta (for
+##  Google search results) and in your feed.xml site description.
+##baseurl: "" # the subpath of your site, e.g. /blog
+##url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+##twitter_username: jekyllrb
+##github_username:  jekyll
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+plugins:
+  - jekyll-feed
   - jekyll-redirect-from
+##  - jekyll-admin
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+#exclude:
+# - Gemfile
+# - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

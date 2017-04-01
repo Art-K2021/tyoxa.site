@@ -1,7 +1,7 @@
 ---
 layout: dirindex
 fb_comments: 3
-title: Projects
+title: Интересные проекты
 redirect_from: ["/fun/"]
 ---
 
@@ -12,8 +12,8 @@ ul > li > p { margin:0; display:inline; }
 </style>
 <ul class="minimal">
 {% for project in site.data.projects %}
-<li><a href="{{ project.url }}">{{ project.name }}</a> — {{ project.descr | markdownify }}</li>
+<li><a href="{{ project.url }}" target="_blank">{{ project.name }}</a> — {{ project.descr | markdownify }}</li>
 {% endfor %}
 </ul>
 
-<h2>More hacks</h2>
+<h2>More hacks</h2> 
